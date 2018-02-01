@@ -1,0 +1,45 @@
+{
+	"welcomeFile": "/index.html",
+	"routes": [{
+		"path": "/resources",
+		"target": {
+			"type": "service",
+			"name": "sapui5",
+			"entryPath": "/resources"
+		},
+		"description": "SAPUI5 Resources"
+	}, {
+		"path": "/test-resources",
+		"target": {
+			"type": "service",
+			"name": "sapui5",
+			"entryPath": "/test-resources"
+		},
+		"description": "SAPUI5 Test Resources"
+	}, {
+		"path": "/ZA201715",
+		"target": {
+			"type": "destination",
+			"name": "FG7_TEST",
+			"entryPath": "/ZA201715"
+		},
+		"description": "TEST OData Service"
+	}, {
+		"path": "/s4hanacloud/sap/opu/odata/sap",
+		"target": {
+			"type": "destination",
+			"name": "sandbox_api",
+			"entryPath": "/s4hanacloud/sap/opu/odata/sap"
+		},
+		"description": "Sandbox API destination"
+	}, {
+		"path": "/sap/opu/odata/sap",
+		"target": {
+			"type": "destination",
+			"name": "sap-api",
+			"entryPath": "/sap/opu/odata/sap"
+		},
+		"description": "SAP API destination"
+	}],
+	"sendWelcomeFileRedirect": true
+}

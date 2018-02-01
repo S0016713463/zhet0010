@@ -1,0 +1,19 @@
+<mvc:View xmlns:l="sap.ui.layout" xmlns:u="sap.ui.unified" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="zhet0010.controller.View1" displayBlock="true">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<l:VerticalLayout class="sapUiResponsiveMargin">
+						<Label text="Import File" width="100%" id="__label0"/>
+						<u:FileUploader id="fileUploader" name="myFileUpload" change="changeFile" uploadUrl="../" tooltip="Upload your file to the local server" uploadComplete="uploadFileToHanaDBComplete" sendXHR="true" useMultipart="false"/>
+						<Button text="Upload File" press="uploadFileToHanaDB" tooltip="Upload File" id="__buttonUploadFile" width="200px"/>
+					</l:VerticalLayout>
+					<l:VerticalLayout class="sapUiResponsiveMargin">
+						<Label text="Regist Purchase Order" width="100%" id="__label1"/>
+						<Button text="Regist Latest Data" press="registLatestData" width="200px" id="__buttonRegistData"/>
+					</l:VerticalLayout>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
